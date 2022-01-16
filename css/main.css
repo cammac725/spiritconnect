@@ -23,3 +23,52 @@ a {
   align-items: center;
 }
 
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+p {
+  color: black;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  font-weight: 300;
+  letter-spacing: 0.05rem;
+  margin: 0 10px;
+}
+
+/* Header Section */
+
+
+
+/* Hero Section */
+#hero {
+  background-image: url(../images/Best097.JPG);
+  /* opacity: .5; */
+  background-size: cover;
+  background-position: top center;
+  /* height: 800px; */
+  position: relative;
+  z-index: 1;
+}
+
+#hero .hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px;
+  flex-direction: column;
+  align-items: center;
+}
+
+#hero #title {
+  margin-bottom: 30%;
+}
+
+#hero h1 {
+  color: rgb(94, 92, 92);
+  display: block;
+  width: fit-content;
+  font-size: 3rem;
+  position: relative;
+}
