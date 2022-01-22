@@ -41,7 +41,7 @@ p {
 .brand h1 {
   font-size: 3rem;
   text-transform: uppercase;
-  color: rgb(94, 92, 92);
+  color: rgb(75, 73, 73);
 }
 
 /* Header Section */
@@ -56,7 +56,7 @@ p {
 
 #header .header {
   min-height: 8vh;
-  background-color: rgb(103, 103, 221);
+  background-color: #2E77B2;
   transition: 0.3s ease background-color;
 }
 
@@ -92,7 +92,7 @@ p {
   height: 100%;
   width: 100%;
   border-radius: 50%;
-  border: 3px solid rgb(94, 92, 92);
+  border: 3px solid rgb(75, 73, 73);
   animation: hamburger_pulse 1s ease infinite;
 }
 
@@ -100,7 +100,7 @@ p {
   height: 2px;
   width: 30px;
   position: relative;
-  background-color: rgb(94, 92, 92);
+  background-color: rgb(75, 73, 73);
   z-index: -1;
 }
 
@@ -111,7 +111,7 @@ p {
   height: 100%;
   width: 100%;
   left: 0;
-  background-color: rgb(94, 92, 92);
+  background-color: rgb(75, 73, 73);
   transition: 0.3s ease;
   transition-property: top, bottom;
 }
@@ -123,7 +123,7 @@ p {
   height: 100%;
   width: 100%;
   left: 0;
-  background-color: rgb(94, 92, 92);
+  background-color: rgb(75, 73, 73);
   transition: 0.3s ease;
   transition-property: top, bottom;
 }
@@ -162,7 +162,7 @@ p {
   font-weight: 500;
   letter-spacing: 0.2rem;
   text-decoration: none;
-  color: rgb(94, 92, 92);
+  color: rgb(75, 73, 73);
   text-transform: uppercase;
   padding: 20px;
   display: block;
@@ -190,34 +190,95 @@ p {
   letter-spacing: initial; 
 }
 
+/* Media Query for Desktop */
+@media only screen and (min-width: 1200px) {
+  #header .header .nav-list .hamburger {
+    display: none;
+  }
+  #header .header .nav-list ul {
+    position: initial;
+    display: block;
+    height: auto;
+    width: fit-content;
+    background-color: transparent;
+  }
+  #header .header .nav-list ul li {
+    display: inline-block;
+  }
+  #header .header .nav-list ul li a {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+  #header .header .nav-list ul li a::after {
+    display: none;
+  }
+}
+
 
 /* Hero Section */
 #hero {
-  background-image: url(../images/Best097.JPG);
-  /* opacity: .5; */
+  background-image: url(../images/herotest1.jpg);
+  /* background-image: url(../images/Best097.JPG); */
   background-size: cover;
-  background-position: top center;
-  /* height: 800px; */
+  background-position: center center;
+  /* opacity: .8; */
   position: relative;
   z-index: 1;
 }
 
 #hero .hero {
+  text-align: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 50px;
+  padding: 100 20px;
+  flex-direction: row;
+}
+
+#hero .col-left {
   flex-direction: column;
   align-items: center;
+  width: 33.3%;
+  height: 100%;
 }
 
-#hero #title {
+#hero .col-left .head-img {
+  margin: 0 auto;
+  width: 50%;
+  height: 30%;
+  position: relative;
+  /* border: 2px solid #2E77B2; */
+  /* bottom: 0; */
+}
+
+#hero .col-center {
+  width: 33.3%
+}
+
+#hero .col-right {
+  width: 33.3%;
+}
+
+#hero .col-left .intro {
+  margin-top: 30px;
+  text-align: center;
+}
+
+#hero .col-left h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  margin-bottom: 20px;
+}
+
+/* #hero #title {
   margin-bottom: 30%;
-}
+} */
 
-#hero h1 {
+/* #hero h1 {
   color: rgb(94, 92, 92);
   display: block;
   width: fit-content;
   font-size: 3rem;
   position: relative;
-}
+} */
+
