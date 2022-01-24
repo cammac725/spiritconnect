@@ -60,7 +60,7 @@ p {
 #header .header {
   min-height: 8vh;
   background-color: #2E77B2;
-  transition: 0.3s ease background-color;
+  /* transition: 0.3s ease background-color; */
 }
 
 #header .header .nav-bar {
@@ -259,15 +259,82 @@ p {
   width: 33.3%;
 }
 
-#hero .col-left .intro {
+#hero .col-left .title {
   margin-top: 30px;
   text-align: center;
 }
 
 #hero .col-left h1 {
-  font-size: 2.8rem;
+  font-size: 3rem;
   font-weight: 700;
   color: rgb(75, 73, 73);
   letter-spacing: 0.2rem;
   margin-bottom: 20px;
+}
+
+
+#hero .col-left h2 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: rgb(75, 73, 73);
+  letter-spacing: 0.2rem;
+  margin-bottom: 20px;
+}
+
+#hero .col-left p {
+  font-size: 2rem;
+  font-weight: 800;
+  color: rgb(75, 73, 73);
+  letter-spacing: 0.2rem;
+  margin-bottom: 20px;
+}
+/* About Section */
+
+#about {
+  background-color: #9dccf3;
+}
+
+#about .about {
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 20px;
+}
+
+#about .about h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: rgb(75, 73, 73);
+  /* margin-bottom: 30px; */
+}
+
+#about .about .about-bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#about .col-left {
+  width: 650px;
+  height: 464px;
+}
+
+#about .col-left .about-img {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+#about .col-right {
+  width: 50%;
+  padding-left: 80px;
+}
+
+#about .col-right p {
+  font-size: 2rem;
+  font-weight: 400;
+  color: rgb(75, 73, 73);
+  letter-spacing: 0.2rem;
 }
