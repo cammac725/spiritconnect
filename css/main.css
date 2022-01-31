@@ -31,7 +31,7 @@ img {
 }
 
 p {
-  color: black;
+  color: rgb(75, 73, 73);
   font-size: 1.4rem;
   line-height: 2.5rem;
   font-weight: 300;
@@ -221,10 +221,8 @@ p {
 /* Hero Section */
 #hero {
   background-image: url(../images/herotest1.jpg);
-  /* background-image: url(../images/Best097.JPG); */
   background-size: cover;
   background-position: center center;
-  /* opacity: .8; */
   position: relative;
   z-index: 1;
 }
@@ -288,13 +286,16 @@ p {
   letter-spacing: 0.2rem;
   margin-bottom: 20px;
 }
-/* About Section */
 
-#about {
+/* About Sections */
+
+/* intro section */
+
+#intro {
   background-color: #9dccf3;
 }
 
-#about .about {
+#intro .intro {
   flex-direction: column;
   justify-content: space-around;
   text-align: center;
@@ -303,39 +304,130 @@ p {
   padding: 100px 20px;
 }
 
-#about .about h1 {
+#intro .intro h1 {
   font-size: 3rem;
   font-weight: 700;
   color: rgb(75, 73, 73);
-  /* margin-bottom: 30px; */
 }
 
-#about .about .about-bottom {
+#intro .intro .intro-main {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
 }
 
-#about .col-left {
+#intro .col-left {
   width: 650px;
   height: 464px;
 }
 
-#about .col-left .about-img {
+#intro .col-left .intro-img {
   height: 100%;
   width: 100%;
   position: relative;
   border: 2px solid #2E77B2;
 }
 
-#about .col-right {
+#intro .intro-main .col-right {
   width: 50%;
   padding-left: 80px;
 }
 
-#about .col-right p {
-  font-size: 2rem;
+#intro .intro-main .col-right p {
+  font-size: 2.3rem;
   font-weight: 400;
   color: rgb(75, 73, 73);
   letter-spacing: 0.2rem;
+  margin-bottom: 20px;
+}
+
+/* intro section */
+
+#contact {
+  background-color: #9dccf3;
+}
+
+#contact .contact {
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 20px;
+}
+
+#contact .contact .contact-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#contact .col-left {
+  width: 50%;
+  padding-right: 80px;
+}
+
+#contact .col-left p {
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: rgb(75, 73, 73);
+  letter-spacing: 0.2rem;
+  margin-bottom: 20px;
+}
+
+#contact .col-left span {
+  font-weight: 900;
+}
+
+#contact .col-right {
+  width: 364px;
+  height: 550px;
+}
+
+#contact .col-right .contact-img {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  border: 4px solid #2E77B2;
+}
+
+/* Footer */
+
+#footer {
+  background-color: #66b3f3;
+}
+
+#footer .footer {
+  min-height: 100px;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#footer .footer h2 {
+  color: rgb(75, 73, 73);
+  font-weight: 700;
+  font-size: 2.3rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 20px;
+}
+
+#footer .footer p {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+/* Keyframes */
+
+@keyframes hamburger_pulse {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.4);
+  }
 }
