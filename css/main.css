@@ -542,8 +542,9 @@ p {
 #footer .footer {
   min-height: 100px;
   flex-direction: column;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px;
+  /* padding-bottom: 30px; */
+  text-align: center;
 }
 
 #footer .footer h2 {
@@ -557,6 +558,7 @@ p {
 #footer .footer p {
   font-weight: 500;
   font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 
 /* Footer End */
