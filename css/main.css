@@ -18,7 +18,7 @@ a {
 
 .container {
   min-height: 100vh;
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -193,6 +193,13 @@ p {
   letter-spacing: initial; 
 }
 
+/* Media query for tablet */
+@media only screen and (max-width: 768px) {
+  #header .header .nav-bar .brand {
+    margin-left: 20px;
+  }
+}
+
 /* Media Query for Desktop */
 @media only screen and (min-width: 1200px) {
   #header .header .nav-list .hamburger {
@@ -216,20 +223,20 @@ p {
     display: none;
   }
 }
-
+/* End Media Query */
+/* End Header Section */
 
 /* Hero Section */
 #hero {
-  background-image: url(../images/herotest1.jpg);
+  background-image: url(../images/hero.jpg);
   background-size: cover;
-  background-position: center center;
+  background-position: right bottom;
   position: relative;
   z-index: 1;
 }
 
 #hero .hero {
   text-align: center;
-  max-width: 1200px;
   margin: 0 auto;
   padding: 100 20px;
   flex-direction: row;
@@ -240,6 +247,7 @@ p {
   align-items: center;
   width: 33.3%;
   height: 100%;
+  left: 50px;
 }
 
 #hero .col-left .head-img {
@@ -263,7 +271,7 @@ p {
 }
 
 #hero .col-left h1 {
-  font-size: 3rem;
+  font-size: 2vw;
   font-weight: 700;
   color: rgb(75, 73, 73);
   letter-spacing: 0.2rem;
@@ -272,7 +280,7 @@ p {
 
 
 #hero .col-left h2 {
-  font-size: 2.3rem;
+  font-size: 1.6vw;
   font-weight: 700;
   color: rgb(75, 73, 73);
   letter-spacing: 0.2rem;
@@ -280,17 +288,43 @@ p {
 }
 
 #hero .col-left p {
-  font-size: 2rem;
+  font-size: 1.3vw;
   font-weight: 800;
   color: rgb(75, 73, 73);
   letter-spacing: 0.2rem;
   margin-bottom: 20px;
 }
 
+/* Media query for tablet */
+@media only screen and (max-width: 768px) {
+  #hero .col-center {
+    width: 0;
+  }
+
+  #hero .col-left {
+    width:45%;
+    left: 40px;
+  }
+
+  #hero .col-right {
+    width: 45%;
+  }
+
+  #hero .col-left h1 {
+    font-size: 3rem;
+  }
+
+  #hero .col-left h2 {
+    font-size: 2.3rem;
+  }
+
+  #hero .col-left p {
+    font-size: 2rem;
+  }
+}
 /* End Hero Section */
 
 /* Intro section */
-
 #intro {
   background-color: #9dccf3;
 }
@@ -318,8 +352,8 @@ p {
 }
 
 #intro .col-left {
-  width: 650px;
-  height: 464px;
+  width: 50%;
+  height: auto;
 }
 
 #intro .col-left .intro-img {
@@ -342,8 +376,28 @@ p {
   margin-bottom: 20px;
 }
 
-/* intro section */
+/* Media Query for tablet */
+@media only screen and (max-width: 768px) {
+  #intro .intro .intro-main {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;;
+  }
 
+  #intro .intro-main .col-left {
+    width: 75%;
+  }
+
+  #intro .intro-main .col-right {
+    margin-top: 50px;;
+    width: 75%;
+    padding-left: 0;
+  }
+}
+/* End Intro section */
+
+/* Contact Section */
 #contact {
   background-color: #9dccf3;
 }
@@ -371,7 +425,7 @@ p {
 }
 
 #contact .col-left {
-  width: 50%;
+  width: 45%;
   padding-right: 80px;
 }
 
@@ -388,8 +442,8 @@ p {
 }
 
 #contact .col-right {
-  width: 364px;
-  height: 550px;
+  width: auto;
+  height: 580px;
 }
 
 #contact .col-right .contact-img {
@@ -399,8 +453,23 @@ p {
   border: 4px solid #2E77B2;
 }
 
-/* About section */
+/* Media Query for tablet */
+@media only screen and (max-width: 768px) {
+  #contact .col-right {
+    width: 45%;
+    height: auto;
+  }
+  #contact .col-left {
+    width: 45%;
+    padding-right: 0;
+  }
+  #contact .col-left p {
+    font-size: 1.6rem;
+  }  
+}
+/* End Contact Section */
 
+/* About section */
 #about {
   background-color: #9dccf3;
 }
@@ -452,7 +521,31 @@ p {
   margin-bottom: 20px;
 }
 
-/* About section */
+/* Media Query for tablet */
+@media only screen and (max-width: 768px) {
+  #about .about .about-main {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;;
+  }
+
+  #about .about-main .col-left {
+    width: 75%;
+  }
+
+  #about .about-main .col-right {
+    margin-top: 50px;;
+    width: 75%;
+    padding-left: 0;
+  }
+
+  #about .about-main .col-right p {
+    line-height: 1.2;
+  }
+}
+
+/* End About section */
 
 /* Testimonials */
 
@@ -480,7 +573,7 @@ p {
   margin-top: 80px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -504,6 +597,7 @@ p {
 
 #testimonials .testimonials-item p {
   text-align: center;
+  font-weight: 700;
 }
 
 /* Media Query for Tablets */
@@ -543,7 +637,6 @@ p {
   min-height: 100px;
   flex-direction: column;
   padding: 30px;
-  /* padding-bottom: 30px; */
   text-align: center;
 }
 
