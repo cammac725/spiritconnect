@@ -21,7 +21,6 @@ a {
   width: 100vw;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
 }
 
 img {
@@ -46,6 +45,7 @@ p {
   text-transform: uppercase;
   color: rgb(75, 73, 73);
 }
+/* End Common Section */
 
 /* Header Section */
 #header {
@@ -193,8 +193,7 @@ p {
   letter-spacing: initial; 
 }
 
-
-/* Media Query for Desktop */
+/* Media query for desktop */
 @media only screen and (min-width: 1200px) {
   #header .header .nav-list .hamburger {
     display: none;
@@ -224,14 +223,13 @@ p {
     margin-left: 20px;
   }
 }
+
 /* Media query for phone */
 @media only screen and (max-width: 480px) {
   .brand h1 {
     font-size: 2.5rem;
   }
 }
-
-/* End Media Query */
 /* End Header Section */
 
 /* Hero Section */
@@ -315,7 +313,6 @@ p {
 
   #hero .col-left .head-img {
     margin: 0 auto;
-    /* margin-top: 100px; */
     width: 30%;
     height: auto;
     position: relative;
@@ -344,12 +341,11 @@ p {
     margin: 0 auto;
     width: 50%;
     height: auto;
-    /* position: relative; */
   }
 }
 /* End Hero Section */
 
-/* Intro section */
+/* Intro Section */
 #intro {
   background-color: #9dccf3;
   width: 100vw;
@@ -403,7 +399,7 @@ p {
   margin-bottom: 20px;
 }
 
-/* Media Query for tablet */
+/* Media query for tablet */
 @media only screen and (max-width: 768px) {
   #intro .intro .intro-main {
     flex-direction: column;
@@ -442,8 +438,7 @@ p {
   }
 
 }
-
-/* End Intro section */
+/* End Intro Section */
 
 /* Contact Section */
 #contact {
@@ -543,7 +538,7 @@ p {
 }
 /* End Contact Section */
 
-/* About section */
+/* About Section */
 #about {
   background-color: #9dccf3;
   width: 100vw;
@@ -645,9 +640,9 @@ p {
   }
 }
 
-/* End About section */
+/* End About Section */
 
-/* Testimonials */
+/* Testimonials Section */
 
 #testimonials {
   background-color: #2E77B2;
@@ -734,14 +729,9 @@ p {
     margin-top: 30px;
   }
 }
+/* End Testimonials Section */
 
-
-
-
-/* Testimonials End */
-
-/* Footer */
-
+/* Footer Section */
 #footer {
   background-color: #66b3f3;
   width: 100vw;
@@ -767,11 +757,9 @@ p {
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
-
-/* Footer End */
+/* End Footer Section */
 
 /* Keyframes */
-
 @keyframes hamburger_pulse {
   0% {
     opacity: 1;
@@ -782,5 +770,4 @@ p {
     transform: scale(1.4);
   }
 }
-
 /* Keyframes End */
