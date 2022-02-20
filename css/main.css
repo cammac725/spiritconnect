@@ -58,9 +58,9 @@ p {
 }
 
 #header .header {
-  min-height: 8vh;
+  min-height: 7vh;
   background-color: #2E77B2;
-  /* transition: 0.3s ease background-color; */
+  transition: 0.3s ease background-color;
 }
 
 #header .header .nav-bar {
@@ -131,11 +131,11 @@ p {
   transition-property: top, bottom;
 }
 
-#header .header.nav-list .hamburger.active .bar::after {
+#header .header .nav-list .hamburger.active .bar::after {
   top: 0;
 }
 
-#header .header.nav-list .hamburger.active .bar::before {
+#header .header .nav-list .hamburger.active .bar::before {
   bottom: 0;
 }
 
@@ -189,16 +189,10 @@ p {
 }
 
 #header .header .nav-list ul li:hover a::after {
-  transform: translate(-50%, -50%), scale(1);
+  transform: translate(-50%, -50%) scale(1);
   letter-spacing: initial; 
 }
 
-/* Media query for tablet */
-@media only screen and (max-width: 768px) {
-  #header .header .nav-bar .brand {
-    margin-left: 20px;
-  }
-}
 
 /* Media Query for Desktop */
 @media only screen and (min-width: 1200px) {
@@ -223,6 +217,20 @@ p {
     display: none;
   }
 }
+
+/* Media query for tablet */
+@media only screen and (max-width: 768px) {
+  #header .header .nav-bar .brand {
+    margin-left: 20px;
+  }
+}
+/* Media query for phone */
+@media only screen and (max-width: 480px) {
+  .brand h1 {
+    font-size: 2.5rem;
+  }
+}
+
 /* End Media Query */
 /* End Header Section */
 
@@ -418,7 +426,7 @@ p {
 /* Media query for phone */
 @media only screen and (max-width: 480px) {
   #intro .intro {
-    padding: 30px 0;
+    padding: 60px 0;
   }
 
   #intro .intro .intro-main {
@@ -513,7 +521,7 @@ p {
 /* Media query for phone */
 @media only screen and (max-width: 480px) {
   #contact .contact {
-    padding: 30px 0;
+    padding: 60px 0;
   }
 
   #contact .contact .contact-main {
@@ -616,7 +624,7 @@ p {
 /* Media query for phone */
 @media only screen and (max-width: 480px) {
   #about .about {
-    padding: 30px 0;
+    padding: 60px 0;
   }
 
   #about .about .about-main {
@@ -652,8 +660,7 @@ p {
   text-align: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 100px 20px;
-  padding-top: 0;
+  padding: 20px 20px;
 }
 
 #testimonials .testimonials .section-title {
