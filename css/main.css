@@ -725,8 +725,12 @@ p {
     padding: 0;
   }
 
+  #testimonials .testimonials .section-title {
+    padding-top: 30px;
+  }
+
   #testimonials .testimonials-main {
-    margin-top: 50px;
+    margin-top: 30px;
   }
 }
 /* End Testimonials Section */
