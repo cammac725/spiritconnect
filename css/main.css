@@ -740,7 +740,7 @@ p {
 #footer .footer {
   min-height: 100px;
   flex-direction: column;
-  padding: 30px;
+  padding: 30px 10px;
   text-align: center;
 }
 
