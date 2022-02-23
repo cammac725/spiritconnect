@@ -337,6 +337,10 @@ p {
     background-position: left;
   }
 
+  #hero .col-left {
+    top: 150px;
+  }
+
   #hero .col-left .head-img {
     margin: 0 auto;
     width: 50%;
