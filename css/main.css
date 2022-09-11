@@ -679,6 +679,7 @@ p {
 #testimonials .testimonials-main {
   margin-top: 80px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
@@ -686,7 +687,7 @@ p {
 
 #testimonials .testimonials-item {
   flex-basis: 80%;
-  height: 350px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -697,6 +698,7 @@ p {
   background-color: #9dccf3;
   background-size: cover;
   margin: 0 5%;
+  margin-bottom: 3%;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -712,6 +714,7 @@ p {
   #testimonials .testimonials-main .testimonials-item {
     flex-basis: 30%;
     margin: 0 1.5%;
+    margin-bottom: 5%;
   }
 }
 
@@ -727,7 +730,6 @@ p {
 
   #testimonials .testimonials-main .testimonials-item {
     width: 80%;
-    margin: 2.5%;
   }
 }
 
